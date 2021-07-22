@@ -3,6 +3,7 @@ import {
   Principal,
   Input,
   Formulario,
+  FormurarioDiv,
   Imagem,
   Select,
   Button,
@@ -13,13 +14,14 @@ import Logo from "../../components/img/logo.svg";
 const CadastrarColaboradores = () => {
   return (
     <Principal>
-        <Imagem>
-          <img src={Logo} alt="Logo" style={{width:"15%"}}/>
-        </Imagem>
+      <Imagem>
+        <img src={Logo} alt="Logo" style={{ width: "15%" }} />
+      </Imagem>
       <div>
-          <Texto>Cadastre: </Texto>
-        </div>
-        <Formulario>
+        <Texto>Cadastre: </Texto>
+      </div>
+      <Formulario>
+        <FormurarioDiv>
           <Select name="estados-brasil">
             <option value="">Cargo</option>
             <option value="LID">Líder</option>
@@ -32,6 +34,8 @@ const CadastrarColaboradores = () => {
           <Input type="text" placeholder="Posição"></Input>
           <Input type="date" placeholder="Data de nascimento"></Input>
           <Input type="email" placeholder="Email"></Input>
+        </FormurarioDiv>
+        <FormurarioDiv>
           <Input type="text" placeholder="Cidade"></Input>
           <Select name="estados-brasil">
             <option value="">Estado</option>
@@ -68,8 +72,9 @@ const CadastrarColaboradores = () => {
           <Input type="number" placeholder="Número"></Input>
           <Input type="text" placeholder="Conta bancária"></Input>
           <Input type="text" placeholder="PIX"></Input>
-          <Button>Cadastrar</Button>
-        </Formulario>
+        </FormurarioDiv>
+        <Button>Cadastrar</Button>
+      </Formulario>
     </Principal>
   );
 };
