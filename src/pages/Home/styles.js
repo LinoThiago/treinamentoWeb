@@ -18,6 +18,9 @@ export const Button = styled.button`
   font-weight: 600;
   background-color: #01a999;
   color: white;
+  &:hover {
+    border:white 2px solid;
+  }
 `;
 export const Botoes = styled.div`
   display: flex;

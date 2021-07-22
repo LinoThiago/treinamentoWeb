@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../components/img/logo.svg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Button, Principal, Imagem, Botoes } from "../Home/styles";
 
 const Home = () => {
@@ -12,8 +12,12 @@ const Home = () => {
         </Imagem>
       </div>
       <Botoes>
-      <Link to="/pesquisacolaborador" style={{width:"100%"}}><Button descricao="PesquisaColaborador">Colaboradores</Button></Link>
-      <Link to="/home" style={{width:"100%"}}><Button descricao="Home">Treinamentos</Button></Link>
+        <Link to="/pesquisacolaborador" style={{ width: "100%" }}>
+          <Button descricao="PesquisaColaborador">Colaboradores</Button>
+        </Link>
+        <Link to="/home" style={{ width: "100%" }}>
+          <Button descricao="Home">Treinamentos</Button>
+        </Link>
       </Botoes>
     </Principal>
   );
