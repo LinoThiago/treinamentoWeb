@@ -16,11 +16,12 @@ export const Principal = styled.div`
 export const Formulario = styled.form`
   display: flex;
   flex-direction: column;
-  width: 72%;
+  width: 93%;
   background-color: black;
   border-radius: 15px;
   padding: 20px;
   margin-top: 60px;
+
 `;
 export const Input = styled.input`
   border: none;
@@ -45,7 +46,8 @@ export const Button = styled.button`
   background-color: #01a999;
   color: white;
 `;
-export const Imagem = styled.image`
+export const Imagem = styled.div`
   width: auto;
   height: auto;
+  padding-left: 80px;;
 `;

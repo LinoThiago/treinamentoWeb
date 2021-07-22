@@ -9,14 +9,17 @@ import {
   Button,
   Texto,
 } from "../CadastrarColaboradores/styles";
+import { Link } from "react-router-dom";
 import Logo from "../../components/img/logo.svg";
 
 const CadastrarColaboradores = () => {
   return (
     <Principal>
-      <Imagem>
-        <img src={Logo} alt="Logo" style={{ width: "15%" }} />
-      </Imagem>
+      <Link to="/home" style={{ width: "82%" }}>
+        <Imagem>
+          <img src={Logo} alt="Logo" style={{ width: "15%" }} />
+        </Imagem>
+      </Link>
       <div>
         <Texto>Cadastre: </Texto>
       </div>

@@ -37,7 +37,7 @@ export const FormurarioDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 48%;
-`; 
+`;
 export const Imagem = styled.div`
   width: 82%;
   margin-top:30px;
@@ -45,7 +45,7 @@ export const Imagem = styled.div`
   flex-direction: row;
   align-items: flex-start;
   border: red 1px solid;
-`;
+  `;
 export const Select = styled.select`
   color:grey;
   border: none;
@@ -66,7 +66,7 @@ export const Select = styled.select`
     border: 1px solid #333;
     font-size: 15px;
     padding-right: 20px;
-`;
+    `;
 export const Button = styled.button`
   border: none;
   border-radius: 30px;
@@ -78,10 +78,10 @@ export const Button = styled.button`
   font-weight: 600;
   background-color: #01a999;
   color: white;
-`;
+  `;
 export const Texto = styled.h2`
   color: black;
   font-size: 26px;
   font-weight: bold;
   text-align: center;
-`;
+  `;
