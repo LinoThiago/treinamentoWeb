@@ -25,18 +25,26 @@ export const Formulario = styled.form`
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   background-color: black;
   border-radius: 15px;
-  padding: 20px;
   margin-top: 30px;
 `;
+export const FormurarioDiv = styled.div`
+  border: red solid 1px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+`; 
 export const Imagem = styled.div`
   width: 82%;
   margin-top:30px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  border: red 1px solid;
 `;
 export const Select = styled.select`
   color:grey;
