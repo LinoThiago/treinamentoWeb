@@ -8,17 +8,17 @@ import Colaborador from './pages/Colaborador';
 
 function App() {
   return (
-      <BrowserRouter> 
+    <BrowserRouter>
       <Switch>
-      <Container>
-      <Route path="/" exact component={Login}/>
-      <Route path="/home" exact component={Home}/>
-      <Route path="/pesquisacolaborador" exact component={PesquisaColaborador}/>
-      <Route path="/cadastrarcolaboradores" exact component={CadastrarColaboradores}/>
-      <Route path="/colaborador" exact component={Colaborador}/>
-      </Container>
+        <Container>
+          <Route path="/" exact component={Login} />
+          <Route path="/home" exact component={Home} />
+          <Route path="/pesquisacolaborador" exact component={PesquisaColaborador} />
+          <Route path="/cadastrarcolaboradores" exact component={CadastrarColaboradores} />
+          <Route path="/colaborador" exact component={Colaborador} />
+        </Container>
       </Switch>
-      </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
