@@ -1,13 +1,16 @@
 import React from 'react';
-import { Principal } from '../PesquisaColaborador/styles';
+import { useParams } from 'react-router-dom';
+import { PrincipalDiv, CardColaboradorDiv, Info } from '../Colaborador/styles';
 
-const Colaborador = () => {
+const Colaborador = (props) => {
+    const {id} = useParams();
     return (
-        <Principal>
-        {/* <CardColaborador>
-            
-        </CardColaborador> */}
-        </Principal>
+        <PrincipalDiv>
+            <CardColaboradorDiv>
+                <Info id={id ? Number.parseInt(id,10) : null}>{id}</Info>
+                <Info>{props.name}</Info>
+            </CardColaboradorDiv>
+        </PrincipalDiv>
     );
 }
 
