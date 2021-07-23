@@ -1,28 +1,31 @@
 import React from "react";
 import {
-  Principal,
+  PrincipalDiv,
+  HeaderDiv,
+  TituloDiv,
+  Texto,
   Input,
   Formulario,
   FormurarioDiv,
-  Imagem,
   Select,
+  ButtonDiv,
   Button,
-  Texto,
 } from "../CadastrarColaboradores/styles";
 import { Link } from "react-router-dom";
 import Logo from "../../components/img/logo.svg";
 
 const CadastrarColaboradores = () => {
   return (
-    <Principal>
-      <Link to="/home" style={{ width: "82%" }}>
-        <Imagem>
-          <img src={Logo} alt="Logo" style={{ width: "15%" }} />
-        </Imagem>
-      </Link>
-      <div>
-        <Texto>Cadastre: </Texto>
-      </div>
+    <PrincipalDiv>
+      <HeaderDiv>
+        <Link to="/home" style={{ width: "225px" }}>
+          <img src={Logo} alt="Logo" style={{ width: "100%" }} />
+        </Link>
+        <TituloDiv>
+          <Texto>Cadastro de Colaboladores</Texto>
+        </TituloDiv>
+        <div style={{width:"225px",height:"10px"}}></div>
+      </HeaderDiv>
       <Formulario>
         <FormurarioDiv>
           <Select name="estados-brasil">
@@ -76,9 +79,11 @@ const CadastrarColaboradores = () => {
           <Input type="text" placeholder="Conta bancária"></Input>
           <Input type="text" placeholder="PIX"></Input>
         </FormurarioDiv>
-        <Button>Cadastrar</Button>
+        <ButtonDiv>
+          <Button>Cadastrar</Button>
+        </ButtonDiv>
       </Formulario>
-    </Principal>
+    </PrincipalDiv>
   );
 };
 
