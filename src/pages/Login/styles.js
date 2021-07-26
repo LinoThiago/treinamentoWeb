@@ -27,6 +27,7 @@ export const Input = styled.input`
   border: none;
   border-radius: 30px;
   height: 30px;
+  width: 90%;
   margin: 10px;
   font-size: 18px;
   padding: 5px 15px;
@@ -39,6 +40,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 30px;
   height: 40px;
+  width: 120%;
   margin: 10px;
   font-size: 18px;
   padding: 5px 15px;

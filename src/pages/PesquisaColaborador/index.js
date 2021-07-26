@@ -27,6 +27,9 @@ const PesquisaColaborador = () => {
       });
   }, []);
 
+  const ColabLink = React.forwardRef ((props,ref) => (
+    <a ref={ref} {...props}>{props.children}</a>
+  ))
   const colab = colaboradores.map((p, i) => (
     <Link
       key={i}
