@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Principal = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   align-items: center;
 `;
 export const Input = styled.input`
@@ -105,9 +105,9 @@ export const Texto = styled.h2`
   border-radius: 15px;
   display: flex;
   flex-direction:row;
-  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap:wrap;
   overflow-y:auto;
   padding:30px 0;
   `;
