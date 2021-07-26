@@ -1,16 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { PrincipalDiv, CardColaboradorDiv, Info } from '../Colaborador/styles';
+import { AuthContext } from '../../providers/auth';
+import { Principal } from '../PesquisaColaborador/styles';
+import { CardColaborador } from './styles';
 
-const Colaborador = (props) => {
-    const {id} = useParams();
+const Colaborador = () => {
+    const{ colaborador } = React.useContext(AuthContext);
     return (
-        <PrincipalDiv>
-            <CardColaboradorDiv>
-                <Info id={id ? Number.parseInt(id,10) : null}>{id}</Info>
-                <Info>{props.name}</Info>
-            </CardColaboradorDiv>
-        </PrincipalDiv>
+        <Principal>
+        <CardColaborador>
+            <p>{colaborador.id}</p>
+            <p>{colaborador.nome}</p>
+            <p>{colaborador.cpf}</p>
+        </CardColaborador>
+        </Principal>
     );
 }
 

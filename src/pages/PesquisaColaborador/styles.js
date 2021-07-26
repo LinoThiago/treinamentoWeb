@@ -105,9 +105,9 @@ export const Texto = styled.h2`
   border-radius: 15px;
   display: flex;
   flex-direction:row;
-  flex-wrap:wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap:wrap;
   overflow-y:auto;
   padding:30px 0;
   `;
